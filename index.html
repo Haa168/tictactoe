@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe - Main Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Comic Sans MS', cursive, sans-serif; /* Cute font */
+            margin: 0;
+            padding: 0;
+            background-color: #e0f7fa; /* Light blue background */
+            color: #0277bd; /* Darker blue text */
+            text-align: center;
+        }
+        .main-container {
+            background: #ffffff; /* White background */
+            border: 2px solid #0277bd; /* Blue border */
+            padding: 50px;
+            border-radius: 15px;
+            display: inline-block;
+            margin-top: 100px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for 3D effect */
+        }
+        h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+            color: #0277bd; /* Darker blue color for header */
+        }
+        button {
+            background-color: #0288d1; /* Blue background */
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 1.5em;
+            margin: 10px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+        button:hover {
+            background-color: #01579b; /* Darker blue on hover */
+            transform: scale(1.05); /* Slightly enlarges button on hover */
+        }
+        .dinosaur-img {
+            width: 200px; /* Adjust size as needed */
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <h1>Welcome to Tic Tac Toe</h1>
+        <button onclick="startGame('ai')">Single Player (AI)</button>
+        <button onclick="startGame('twoPlayers')">Two Player Mode</button>
+        <button onclick="location.href='gameplay.html'">How-to-play</button>
+        <button onclick="location.href='settings.html'">Settings</button>
+    </div>
+    
+    <script>
+        function startGame(mode) {
+            localStorage.setItem('gameMode', mode);
+            location.href = 'game.html';
+        }
+    </script>
+</body>
+</html>

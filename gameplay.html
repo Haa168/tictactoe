@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to Play Tic Tac Toe</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Comic Sans MS', cursive, sans-serif; /* Cute font */
+            margin: 0;
+            padding: 0;
+            background-color: #e0f7fa; /* Light blue background */
+            color: #0277bd; /* Darker blue text */
+            text-align: center;
+        }
+        #how-to-play {
+            background: #ffffff; /* White background */
+            border: 2px solid #0277bd; /* Blue border */
+            padding: 30px;
+            border-radius: 15px;
+            display: inline-block;
+            margin-top: 50px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for 3D effect */
+            text-align: left;
+        }
+        h1 {
+            font-size: 2.5em;
+            margin: 20px 0;
+            color: #0277bd; /* Darker blue color for header */
+        }
+        p {
+            font-size: 1.2em;
+            margin: 10px 0;
+            line-height: 1.6;
+        }
+        button {
+            background-color: #0288d1; /* Blue background */
+            border: none;
+            color: white;
+            padding: 15px 30px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 1.2em;
+            margin: 20px 0;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+        button:hover {
+            background-color: #01579b; /* Darker blue on hover */
+            transform: scale(1.05); /* Slightly enlarges button on hover */
+        }
+    </style>
+</head>
+<body>
+    <h1>How to Play Tic Tac Toe</h1>
+    <div id="how-to-play">
+        <p>1. Tic Tac Toe is played on a 9x9 grid.</p>
+        <p>2. You are X, and your opponent is O. Players take turns placing their marks in empty squares.</p>
+        <p>3. The goal is to get 5 of your marks in a row (horizontally, vertically, or diagonally) to win.</p>
+        <p>4. The game ends when a player gets 5 in a row or the grid is full without a winner, resulting in a draw.</p>
+    </div>
+    <button onclick="location.href='index.html'">Back to Main Menu</button>
+</body>
+</html>

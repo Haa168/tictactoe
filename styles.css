@@ -1,0 +1,83 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+h1 {
+    font-size: 24px;
+    color: #333; /* Darker color for better readability */
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(7, 50px); /* 7 columns, 50px each */
+    grid-template-rows: repeat(7, 50px); /* 7 rows, 50px each */
+    grid-gap: 5px;
+    position: relative; /* Ensures absolute positioning of the winning line works */
+}
+
+
+.cell {
+    width: 50px;
+    height: 50px;
+    background-color: #ffffff; /* White background for cells */
+    border: 1px solid #cccccc; /* Light gray border */
+    text-align: center;
+    line-height: 50px;
+    font-size: 24px;
+    cursor: pointer;
+    position: relative;
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transitions */
+}
+
+.cell:hover {
+    background-color: #f5f5f5; /* Slightly darker on hover */
+}
+
+button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #0288d1; /* Blue background */
+    color: white;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background-color: #01579b; /* Darker blue on hover */
+    transform: scale(1.05); /* Slightly enlarges button on hover */
+}
+
+.win {
+    background-color: #d0f0c0; /* Light green for winning cells */
+}
+
+
+.winning-line {
+    position: absolute;
+    height: 5px;
+    background-color: #4caf50; /* Green winning line */
+    transform-origin: 0 50%; /* Adjust as needed */
+    z-index: 1;
+    pointer-events: none; /* Prevents interaction with the winning line */
+}
+
+.cell.win {
+    background-color: rgba(79, 126, 207, 0.707); /* or any color that highlights the cell */
+    border: 2px solid #f5f5dc;
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Comic Sans MS', cursive, sans-serif; /* Cute font */
+            margin: 0;
+            padding: 0;
+            background-color: #e0f7fa; /* Light blue background */
+            color: #0277bd; /* Darker blue text */
+            text-align: center;
+        }
+        h1 {
+            font-size: 2.5em;
+            margin: 20px 0;
+            color: #0277bd; /* Darker blue color for header */
+        }
+        .settings-container {
+            background: #ffffff; /* White background */
+            border: 2px solid #0277bd; /* Blue border */
+            padding: 30px;
+            border-radius: 15px;
+            display: inline-block;
+            margin-top: 50px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for 3D effect */
+            text-align: left;
+        }
+        label {
+            display: block;
+            font-size: 1.2em;
+            margin: 10px 0;
+        }
+        select {
+            font-size: 1.1em;
+            padding: 10px;
+            border: 1px solid #0277bd;
+            border-radius: 5px;
+            background-color: #e3f2fd; /* Light blue for select background */
+            color: #0277bd; /* Text color */
+        }
+        button {
+            background-color: #0288d1; /* Blue background */
+            border: none;
+            color: white;
+            padding: 15px 30px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 1.2em;
+            margin-top: 20px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+        button:hover {
+            background-color: #01579b; /* Darker blue on hover */
+            transform: scale(1.05); /* Slightly enlarges button on hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="settings-container">
+        <h1>Settings</h1>
+        <label for="aiLevel">AI Difficulty:</label>
+        <select id="aiLevel">
+            <option value="easy">Easy</option>
+            <!-- Add more options here if needed -->
+        </select>
+        <br>
+        <label for="gridTheme">Grid Theme:</label>
+        <select id="gridTheme">
+            <option value="classic">Classic</option>
+        </select>
+        <br>
+        <button onclick="location.href='index.html'">Back to Main Menu</button>
+    </div>
+</body>
+</html>
